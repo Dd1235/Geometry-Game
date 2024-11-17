@@ -1,0 +1,32 @@
+# Config file for GeometryGame
+
+# Window configuration
+# Format: Window <Width> <Height> <Frame Limit> <Full Screen>
+# Width (W): int; Height (H): int; Frame Limit (FL): int; Full Screen (FS): int (1 = Full screen, 0 = Windowed)
+Window 1280 720 60 0
+
+# Font configuration
+# Format: Font <Font File> <Size> <Red> <Green> <Blue>
+# Font File (F): string; Font Size (S): int; Color (RGB): int, int, int; RGB color for font
+Font fonts/joystix_monospace.otf 24 255 255 255
+
+# Player configuration
+# Format: Player <Shape Radius> <Collision Radius> <Speed> <Fill Red> <Fill Green> <Fill Blue> <Outline Red> <Outline Green> <Outline Blue> <Outline Thickness> <Vertices> <Special Weapon Cooldown>
+# Shape Radius (SR): int; Collision Radius (CR): int; Speed (S): int
+# Fill Color (FR, FG, FB): int, int, int; Outline Color (OR, OG, OB): int, int, int
+# Outline Thickness (OT): int; Vertices (V): int; Cooldown Time for Special Weapon (T): int (in frames)
+Player 32 32 5 5 5 5 255 0 0 4 8 500
+
+# Enemy configuration
+# Format: Enemy <Shape Radius> <Collision Radius> <Min Speed> <Max Speed> <Outline Red> <Outline Green> <Outline Blue> <Outline Thickness> <Min Vertices> <Max Vertices> <Lifespan> <Spawn Interval>
+# Shape Radius (SR): int; Collision Radius (CR): int; Speed Min/Max (SMIN, SMAX): float, float
+# Outline Color (OR, OG, OB): int, int, int; Outline Thickness (OT): int
+# Min/Max Vertices (VMIN, VMAX): int, int; Lifespan (L): int; Spawn Interval (SI): int (in frames)
+Enemy 32 32 3 3 255 255 255 2 3 8 90 60
+
+# Bullet configuration
+# Format: Bullet <Shape Radius> <Collision Radius> <Speed> <Fill Red> <Fill Green> <Fill Blue> <Outline Red> <Outline Green> <Outline Blue> <Outline Thickness> <Vertices> <Lifespan>
+# Shape Radius (SR): int; Collision Radius (CR): int; Speed (S): int
+# Fill Color (FR, FG, FB): int, int, int; Outline Color (OR, OG, OB): int, int, int
+# Outline Thickness (OT): int; Vertices (V): int; Lifespan (L): int
+Bullet 10 10 20 255 255 255 255 255 255 2 20 30
